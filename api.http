@@ -1,0 +1,29 @@
+@host =  https://itsrzyaxzc.execute-api.us-east-1.amazonaws.com 
+
+###
+GET {{host}}/cars
+###
+GET {{host}}/cars/7469b79d-9b76-48a1-a6fc-f0cdf9daedca
+###
+POST  {{host}}/cars
+Content-Type: application/json
+
+{
+  "name": "BMW I8",
+  "price": 123233.23,
+  "make": "BMW",
+  "tags": ["Carro", "muito legal"]
+}
+###
+PUT  {{host}}/cars/ceb00e18-fc11-4c2f-82d1-964486c3bcab
+Content-Type: application/json
+
+{
+  "name": "BMW X1",
+  "price": 123233.23,
+  "make": "BMW",
+  "tags": ["Carro", "muito legal", "SUV"]
+}
+###
+DELETE  {{host}}/cars/4a99fa3a-f46a-45af-882a-223e0d4579a0
+
